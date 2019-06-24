@@ -8,6 +8,7 @@
 --normal:12px;
 /* Espaciado */
 --space:10px;
+--space-2:20px;
 /* Box shadow */
 --box:0px 0 2px 1px #e6e5e9;
 }
@@ -88,4 +89,22 @@ nav li a:hover{
 
 .main_button:hover{
   background-color: #5e9e22;
+}
+
+footer{
+    background-color: var(--black-color);
+    color:var(--white-color);
+    height: 25px;
+    padding: var(--space);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+footer .footer_text{
+    margin: var(--space);
+}
+footer .footer_text a{
+    text-decoration: none;
+    color: var(--white-color);
+
 }
