@@ -22,6 +22,7 @@ html,body{
   font-family: 'Open Sans', sans-serif;
 }
 
+/* navBar*/
 nav{
   display: flex;
   background-color: var(--green-color);
@@ -49,10 +50,13 @@ nav li a:hover{
   color: var(--white-color);
 }
 
+/* section*/
 .main_section{
   padding: 15%;
   text-align: center;
 }
+
+/* products*/
 
 .products{
   background-image: url("../images/curve.png");
@@ -91,20 +95,58 @@ nav li a:hover{
   background-color: #5e9e22;
 }
 
+/* Beneficios */
+.beneficios{
+  padding: 10%;
+  display: flex;
+}
+
+.beneficio{
+  text-align: center;
+  padding: 20px;
+}
+
+.beneficio img{
+  max-height: 100px
+}
+
+.text_beneficio{
+  text-align: justify;
+}
+
+/* Mentions */
+.mentions{
+  display: flex;
+  padding: 5%;
+}
+.mention img{
+  width: 100%;
+}
+h2.mention_title{
+  text-align: center;
+}
+.mention{
+  padding: var(--space);
+}
+.content_mention{
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.mention .text{
+  padding: var(--space);
+}
+
+hr{
+  opacity: .2;
+}
+
+/* Footer*/
+
 footer{
-    background-color: var(--black-color);
-    color:var(--white-color);
-    height: 25px;
-    padding: var(--space);
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-}
-footer .footer_text{
-    margin: var(--space);
-}
-footer .footer_text a{
-    text-decoration: none;
-    color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
 
 }
