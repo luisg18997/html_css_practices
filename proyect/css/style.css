@@ -1,15 +1,31 @@
+/* -------- variables*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+:root{
+  --green-color:#7ACC2D;
+  --white-color:white;
+  --black-color:#313337;
+  /* Tipografía */
+--normal:12px;
+/* Espaciado */
+--space:10px;
+/* Box shadow */
+--box:0px 0 2px 1px #e6e5e9;
+}
+
+/* -------- variables*/
+
 html,body{
   padding:0px;
   margin:0px;
-  font-size: 12px;
-  font-family: Helvetica;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
 }
 
 nav{
   display: flex;
-  background-color: #7ACC2D;
-  padding: 10px;
-  color: white;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
   justify-content: space-between;
   align-items: center;
 }
@@ -21,16 +37,15 @@ nav ul{
 nav li{
   padding-left: 20px;
   list-style: none;
-
 }
 
 nav li a{
-  color: black;
+  color: var(--black-color);
   text-decoration: none;
 }
 
 nav li a:hover{
-  color: white;
+  color: var(--white-color);
 }
 
 .main_section{
@@ -39,18 +54,38 @@ nav li a:hover{
 }
 
 .products{
-  background-image: url('../images/curve.png');
-  height: 200px;
+  background-image: url("../images/curve.png");
+  max-height: 40px;
   background-size: cover;
   background-position: center top;
-  padding:15%;
+  padding:10% 20%;
   display: flex;
 }
+
 .product{
-  padding: 10px;
+  padding: var(--space);
+  margin-top: -240px;
+}
+.product .content{
+  background-color: var(--white-color);
+  padding: var(--space);
+  box-shadow: var(--box);
+}
+.img_content{
+  text-align: center;
 }
 
-.product .content{
-  background-color: white;
-  padding: 20px;
+.main_button{
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
+  border:0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover{
+  background-color: #5e9e22;
 }
